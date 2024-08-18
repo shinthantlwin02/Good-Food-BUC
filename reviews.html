@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Food - reviews</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img src="/assets/icons/logo.svg" />
+        <ul class="nav-items tenor-sans-regular">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="index.html#contact">Contact</a>
+          </li>
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="reviews.html">Reviews</a>
+          </li>
+          <li>
+            <a href="menu.html">Order Now</a>
+          </li>
+        </ul>
+        <a href="cart.html">
+          <img src="/assets/icons/cart.svg" />
+        </a>
+      </nav>
+    </header>
+    <div class="reviews-content tenor-sans-regular">
+      <h1 class="title">What Others <span>Think About Us</span></h1>
+      <div class="reviews no-scrollbar">reviews</div>
+
+      <h1 class="title">What You <span>Think About Our Restaurant</span></h1>
+      <p class="sub-title">
+        Thank you for your feedback! We’re glad you enjoyed your visit. If
+        anyone else has thoughts to share, we’d love to hear from you!
+      </p>
+
+      <form type="submit" class="review-form">
+        <input
+          name="review-title"
+          id="review-title"
+          placeholder="Review Title"
+          class="tenor-sans-regular"
+        />
+        <textarea
+          name="review-description"
+          id="review-message"
+          class="tenor-sans-regular"
+        >
+Your Review Message</textarea
+        >
+        <div class="btn-group">
+          <button class="btn-primary">Submit</button>
+          <button class="btn-secondary">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/reviews.js"></script>
+  </body>
+</html>

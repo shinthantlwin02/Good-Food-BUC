@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Food - Order Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img src="/assets/icons/logo.svg" />
+        <ul class="nav-items">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="reviews.html">Reviews</a>
+          </li>
+          <li>
+            <a href="menu.html">Order Now</a>
+          </li>
+        </ul>
+        <img src="/assets/icons/cart.svg" />
+      </nav>
+    </header>
+    <main class="cart-body">
+      <h1 class="title-my-cart">My Cart</h1>
+      <div class="orders">orders</div>
+      <div class="total">
+        <p>subTotal: 0 MMK</p>
+        <p>delivery charge: 0 MMK</p>
+        <p>total: 0 MMK</p>
+      </div>
+      <form type="submit" class="order-form">
+        <h2>Please fill this Form to Order</h2>
+        <div>
+          <label for="name">Name</label>
+          <input
+            name="name"
+            id="name-input"
+            placeholder="Enter your name"
+            class="tenor-sans-regular"
+          />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input
+            type="number"
+            name="phone"
+            id="phone-input"
+            placeholder="Enter your Phone Number"
+            class="tenor-sans-regular"
+          />
+        </div>
+        <div>
+          <label for="address">Enter Your Address</label>
+          <textarea
+            name="address"
+            id="address-input"
+            class="tenor-sans-regular"
+          ></textarea>
+        </div>
+        <div>
+          <label for="notes">Notes</label>
+          <textarea
+            name="notes"
+            id="notes-input"
+            class="tenor-sans-regular"
+          ></textarea>
+        </div>
+      </form>
+      <div class="btn-group">
+        <button class="btn-primary">Order</button>
+        <button class="btn-secondary">Cancel</button>
+      </div>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
