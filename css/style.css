@@ -52,7 +52,7 @@ html::-webkit-scrollbar {
   color: black;
 }
 
-.navbar .nav-items a:hover{
+.navbar .nav-items a:hover {
   color: #bc6c25;
   font-weight: 500;
 }
@@ -632,8 +632,10 @@ html::-webkit-scrollbar {
 .reviews {
   display: flex;
   gap: 40px;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding: 40px 120px;
+  cursor: grab;
+  scroll-behavior: smooth;
 }
 
 .reviews .review-card {
@@ -647,6 +649,8 @@ html::-webkit-scrollbar {
   min-width: 40%;
   height: 200px;
   box-sizing: border-box;
+  user-select: none;
+  cursor: grab;
 }
 
 .reviews .review-card img {
@@ -715,25 +719,25 @@ html::-webkit-scrollbar {
 /* review page end */
 
 /* cart page  */
-.cart-body{
+.cart-body {
   padding: 80px 120px;
 }
 
-.cart-body .title-my-cart{
+.cart-body .title-my-cart {
   text-align: center;
 }
 
-.cart-body .total{
+.cart-body .total {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
 
-.cart-body .total p{
- margin-bottom: 4px;
+.cart-body .total p {
+  margin-bottom: 4px;
 }
 
-.cart-body .order-form{
+.cart-body .order-form {
   background-color: #f3f3f3;
   border-radius: 30px;
   box-shadow: 0px 2px 10px #b1b1b1;
@@ -741,24 +745,24 @@ html::-webkit-scrollbar {
   margin: 20px 0px;
 }
 
-.cart-body .order-form label{
+.cart-body .order-form label {
   font-size: 16px;
   font-weight: 500;
 }
 
-.cart-body .order-form input{
-    width: 500px;
-    display: block;
-    padding: 10px 15px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(212, 212, 212);
-    color: black;
+.cart-body .order-form input {
+  width: 500px;
+  display: block;
+  padding: 10px 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(212, 212, 212);
+  color: black;
 }
 
-.cart-body .order-form textarea{
+.cart-body .order-form textarea {
   width: 1000px;
   height: 50px;
   resize: none;
@@ -772,7 +776,7 @@ html::-webkit-scrollbar {
   color: black;
 }
 
-.cart-body .order-form #notes-input{
+.cart-body .order-form #notes-input {
   width: 1000px;
   height: 80px;
   resize: none;
@@ -785,9 +789,9 @@ html::-webkit-scrollbar {
   color: black;
 }
 
-.cart-body .btn-group{
-    display: flex;
-    gap: 10px;
-    justify-content: end;
+.cart-body .btn-group {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
 }
 /* cart page end */
